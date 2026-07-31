@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 body{
     padding-top: 60px;
     font-family: 'Poppins', sans-serif;
@@ -26,7 +27,6 @@ html{
     margin:0;
     box-sizing: border-box;
     padding:0;
-    /* max-width: 100%; */
 }
 
 .logoimg{
@@ -60,16 +60,6 @@ section {
     height: 100vh;
 }
 
-.ocean{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
 .oceanImage{
     position: absolute;
     width:100%;
@@ -77,9 +67,8 @@ section {
     left:0;
 }
 
-
 #water{
-    transform: translateY(5%);
+    transform: translateY(10%);
 }
 
 section::before{
@@ -94,7 +83,6 @@ section::before{
 }
 
 section img{
-    /* top:0; */
     position: absolute;
     bottom:0;
     left:0;
@@ -104,7 +92,6 @@ section img{
 header{
     padding: 10px;
     width: 100%;
-    /* border-bottom: 1px solid; */
 }
 
 header ul li{
@@ -120,15 +107,6 @@ header ul li{
     width: 100%;
 }
 
-.boat-wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto; /* or exact px if needed */
-    overflow: hidden;
-    pointer-events: none;
-}
 .content h1{
     font-size: 2em;
     position: absolute;
@@ -138,14 +116,13 @@ header ul li{
     color: #ffffff;
 }
 
-.mainNavbar{
+#mainNavbar{
     color: black;
     z-index: 999;
     position: fixed;
     top:0;
     width: 100%;
     white-space: nowrap;
-    
 }
 
 .job::before{
@@ -181,7 +158,6 @@ header ul li{
 
 #boat{
     animation: boat 90s linear infinite alternate;
-    
 }
 
 @keyframes boat{
@@ -192,7 +168,6 @@ header ul li{
         transform: translateX(calc(50vw ));
     }
 }
-
 
 /* Resume part */
 .resume{
@@ -214,7 +189,7 @@ header ul li{
 }
 
 .resumeCard{
-     margin-top: 30px;
+    margin-top: 30px;
     background: rgba(255,255,255,0.1);
     padding: 20px;
     border-radius: 15px;
@@ -231,8 +206,7 @@ header ul li{
 }
 
 /* Projects Stuff */
-.projects{
-    background: linear-gradient(to bottom, #4F889F, #85CAE6);
+.projects-programming{
     padding: 60px 20px;
 }
 
@@ -279,7 +253,6 @@ header ul li{
     width: 100%;
     padding: 60px 20px;
 }
-
 
 #aboutTitle {
     padding: 60px;

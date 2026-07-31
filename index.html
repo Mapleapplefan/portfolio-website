@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href ="style.css">
         <title>Maple's Portfolio</title>
@@ -10,14 +10,12 @@
     <body>
         <header>
             <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-                <a class="navbar-brand" href="#"> <img src="./images/logo.png" alt="logo" class="logoimg"></a>
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                 <button class="navbar-toggler" type = "button" data-toggle="collapse" data-target="#navLinks" aria-expanded = "false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navLinks">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
@@ -34,7 +32,7 @@
             </nav>
         </header>
         <section>
-            <div >
+            <div>
                 <img src="images/sky.png" id="sky" >
                 <img src="images/stars.png" id="stars">
                 <img src="images/leaf1.png" id="leaf1">
@@ -57,29 +55,14 @@
                 <img src="images/water.png" id="water">
             </div>
         </section>
-        <!-- </div> -->
-
+ 
         <div class="oceanSection"> 
             <div class = "resume" id = "resume">
                 <div class="resumeText">
-                <h2 id="resumeTitle">&lt;/Resume&gt;</h2>
-                    <div class ="resumeOptions">
-                        <div class = "resumeCard">
-                            <h3> Programming Resume</h3>
-                            <p>If you are interested in my programming projects and skills.</p>
-                            <a href = "files/software_resume.pdf" target="_blank" class="btn btn-outline-light"> Programming Resume </a>
-                        </div>
-                        <div class = "resumeCard">
-                            <h3> Design Resume</h3>
-                            <p>If you are interested in my UI/UX, animation, and creative skills~</p>
-                            <a href = "files/design_resume.pdf"  class="btn btn-outline-light"> Creative Resume </a>
-                        </div>
-                    </div>
-                <p class = "resumeDesc">
-                    <!-- Good design brings life to programs. -->
-                </p>
+                //<h2 id="resumeTitle">&lt;/Resume&gt;</h2>
+                    
             </div>
-
+ 
             <div class = "projects-programming" id = "projects-programming">
                 <div class="gridText">
                 <h2>&lt;/Programming Projects&gt;</h2>
@@ -116,9 +99,9 @@
                     </div>
                 </div>
                 </div>
-
+ 
             </div>
-
+ 
             <div class = "about" id = "about">
                <h2 id="aboutTitle">&lt;/About&gt;</h2>
                 <div class="aboutContent">
@@ -131,7 +114,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             </div>
             <div id="ocean">
                 <img src="images/oceanBackground.PNG" >
@@ -156,42 +139,11 @@
                 <img src="images/waddleDee.PNG" class="oceanImage" id="waddleDee">
             </div>
         </div>  
-
-        <script>
-            let leaf1 = document.getElementById("leaf1");
-            let leaf2 = document.getElementById("leaf2");
-            let farMountain = document.getElementById("farMountain");
-            let nearMountain = document.getElementById("nearMountain");
-            let duck = document.getElementById("duck");
-            let boat = document.getElementById("boat");
-            let water = document.getElementById("water");
-            // let text = document.getElementById("myName");
-            window .addEventListener('scroll', function(){
-                let value = window.scrollY;
-                
-                let maxScroll;
-                if (window.innerWidth < 768) {
-                    maxScroll = 100; // Adjusted for mobile view
-                } else {
-                    maxScroll = 400; // Adjusted for desktop view
-                }
-                if (value>maxScroll) {
-                    value = maxScroll;
-                }
-                leaf1.style.left = value * 0.5 + 'px';
-                leaf2.style.left = -value * 0.5 + 'px';
-                farMountain.style.bottom = value * -0.50 + 'px';
-                nearMountain.style.bottom = value * -0.30 + 'px';
-                water.style.bottom = value* 0.1 + 'px';
-                duck.style.left = -value * 0.1 + 'px';
-                stars.style.top = value * 0.5+ 'px';
-                // text.style.bottom= value * -0.50 + 'px';
-
-            })
-        </script>         
-    
+ 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
     </body>
 </html>
+ 
