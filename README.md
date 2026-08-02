@@ -15,4 +15,3 @@ Images were drawn in the app *ibisPaint X* and overlapped on top of one another 
 
 ## 2) Bootstrap
 Website is responsive. Added stars to fill the empty top for smaller screen sizes. Navigation bar has transparent background.
-<img width="730" height="750" alt="Screenshot 2025-08-08 at 11 30 04 AM" src="https://github.com/user-attachments/assets/d16f7779-3f45-4c89-937c-cd493d7f978a" />
