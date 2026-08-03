@@ -1,8 +1,6 @@
 # Portfolio Website
 <img width="1512" height="769" alt="Screenshot 2026-08-02 at 4 23 15 PM" src="https://github.com/user-attachments/assets/5de56558-3a9f-4de5-9146-19a6e125092b" />
-My portfolio website! Displays my creative mind + technical skills!
-
-https://syrupmap.github.io/Portfolio-Website/ 
+My portfolio website! Displays my creative mind + technical skills! Website: https://syrupmap.github.io/Portfolio-Website/ 
 
 ## About
 I didn't want my portfolio website to be too complex, but simple and full of personality. I moreso wanted to showcase my artistic side, with the addition of simple interactive elements that make my portfolio more like a game than a chore. 
