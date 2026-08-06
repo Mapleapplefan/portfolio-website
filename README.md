@@ -1,4 +1,4 @@
-# Portfolio Website
+# (In Progress) Portfolio Website
 <img width="1512" height="769" alt="Screenshot 2026-08-02 at 4 23 15 PM" src="https://github.com/user-attachments/assets/5de56558-3a9f-4de5-9146-19a6e125092b" />
 My portfolio website! Displays my creative mind + technical skills! Website: https://syrupmap.github.io/Portfolio-Website/ 
 
