@@ -19,7 +19,7 @@ html{
     scroll-behavior: smooth;
 }
 
-#projects, #resume {
+#projects, #resume, #experience, #about {
     scroll-margin-top: 80px;
 }
 
@@ -205,48 +205,247 @@ header ul li{
     padding: 10px;
 }
 
-/* Projects Stuff */
+/* Experience section */
+.experience{
+    padding: 60px 20px;
+}
+ 
+.experienceTimeline{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+ 
+.experienceCard{
+    border-radius: 15px;
+    padding: 20px 25px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    border-left: 3px solid rgba(255,255,255,0.4);
+}
+ 
+.experienceCard:hover{
+    transform: translateX(8px);
+    background: rgba(255,255,255,0.2);
+}
+ 
+.experienceHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+}
+ 
+.experienceHeader h3{
+    margin: 0;
+}
+ 
+.experienceDate{
+    font-size: 0.85em;
+    opacity: 0.8;
+    white-space: nowrap;
+}
+ 
+.experienceOrg{
+    font-size: 0.9em;
+    opacity: 0.85;
+    margin: 4px 0 10px;
+}
+ 
+.experienceTags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+ 
+.experienceTags span{
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.8em;
+}
+
+
+/* Projects Section */
 .projects-programming{
     padding: 60px 20px;
 }
-
+ 
 .gridText{
     padding: 60px;
     margin: auto;
     text-align: center;
 }
-
+ 
 .projectGrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-top: 30px;
 }
-
+ 
 .projectCard {
     background: rgba(255,255,255,0.1);
     border-radius: 15px;
     padding: 15px;
-    text-align: center;
+    text-align: left;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
-
+ 
 .projectCard:hover {
     transform: translateY(-10px);
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.18);
 }
-
+ 
 .projectCard img{
     width: 100%;
-     border-radius: 10px;
-     margin-bottom: 10px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+ 
+.projectCard h3{
+    font-size: 1.15em;
+    margin-bottom: 8px;
+}
+ 
+.projectCard p{
+    font-size: 0.9em;
+    line-height: 1.5;
+    opacity: 0.9;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+ 
+.projectTags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+ 
+.projectTags span{
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.78em;
+}
+ 
+.projectTags span.more{
+    background: transparent;
+    opacity: 0.8;
+}
+ 
+.projectButtons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+}
+ 
+.btn-live-demo{
+    border: none;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-size: 0.85em;
+    transition: 0.3s;
+}
+ 
+.btn-live-demo:hover{
+    background: #3d6d80;
+    color: #ffffff;
+}
+ 
+.btn-github{
+    font-size: 0.85em;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+ 
+.btn-github:hover{
+    opacity: 1;
+}
+ 
+.moreProjectsWrap{
+    text-align: center;
+    margin-top: 40px;
+}
+ 
+.btn-more-projects{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #E6E6E6;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+ 
+.btn-more-projects:hover{
+    background: #E6E6E6;
+    color: #4F889F;
 }
 
+
+/* Standalone projects page header (projects.html) */
+.projectsPageHeader{
+    padding: 100px 20px 40px;
+    text-align: center;
+    background: linear-gradient(to bottom, #8E7AA0, #4F889F);
+}
+ 
+.backHomeLink{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 0.9em;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+ 
+.backHomeLink:hover{
+    opacity: 1;
+    color: #99e6f9;
+}
+ 
+.projectsPageHeader h1{
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+ 
+.projectsPageHeader p{
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+ 
+.projectsPageBody{
+    background: linear-gradient(to bottom, #4F889F, #85CAE6);
+    padding: 20px 20px 80px;
+}
+ 
+.projectsPageBody .projectGrid{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+ 
+ 
 @media (max-width: 600px) {
     .projectGrid{
         grid-template-columns: 1fr;
     }
 }
+ 
 
 /* About section */
 .about {
